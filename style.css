@@ -1,0 +1,66 @@
+/* Hintergrundfarbe der gesamten Webseite */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    display:flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+}
+
+table th,
+table td {
+    width: 50px;
+    height: 90px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid white;
+    /* Weiße border-color für innere Trennlinien */
+}
+
+/* Stil für die X- und O-Symbole */
+.cell.cross {
+    color: red;
+}
+
+.cell.circle {
+    color: blue;
+}
+
+/* Stil für die Tabelle */
+table {
+    width: 300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 5px solid rgb(197, 197, 197);
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
