@@ -16,8 +16,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
+    /* margin-top: 350px; */
     position: relative;
+    height: 50vh;
 }
 
 table th,
@@ -102,3 +103,15 @@ table tr td:last-child {
 #restart-button:hover {
     background-color: #0097D7; /* Hintergrundfarbe ändert sich beim Hover */
 }
+
+/* @media (max-width:800px){
+    #content {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width:500px){
+    #content {
+        margin-top: 125px;
+    }
+} */
