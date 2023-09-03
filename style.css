@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    display:flex;
+    display: flex;
     width: 100vw;
     justify-content: center;
 }
@@ -16,7 +16,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 250px;
+    position: relative;
 }
 
 table th,
@@ -26,7 +27,11 @@ table td {
     text-align: center;
     font-size: 24px;
     border: 1px solid white;
-    /* Weiße border-color für innere Trennlinien */
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.301);
 }
 
 /* Stil für die X- und O-Symbole */
@@ -63,4 +68,37 @@ table tr:last-child td {
 
 table tr td:last-child {
     border-right: 0;
+}
+
+.symbol-container {
+    width: 70px; /* Breite der Container */
+    height: 70px; /* Höhe der Container */
+    display: inline-block;
+    vertical-align: middle; /* Vertikal zentriert innerhalb des td */
+    text-align: center; /* Zentriert den Text horizontal innerhalb des Containers */
+}
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+/* Stil für den Restart-Button */
+#restart-button {
+    display: block;
+    margin: 20px auto; /* Zentriert den Button horizontal */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00B0EF; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease; /* Animation für Hintergrundfarbänderungen */
+}
+
+#restart-button:hover {
+    background-color: #0097D7; /* Hintergrundfarbe ändert sich beim Hover */
 }
